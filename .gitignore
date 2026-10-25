@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Expo generated files
+.expo/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

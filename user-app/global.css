@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Theme variables (space-separated RGB so Tailwind opacity modifiers work).
+ * Mirrored in src/theme/tokens.ts for JS-side colours — change both together.
+ * Identical palette to apps/professional-app/global.css — same brand, own file.
+ */
+@layer base {
+  :root {
+    --primary: 255 85 0; /* #FF5500 */
+    --primary-pressed: 224 75 0;
+    --primary-soft: 255 237 227;
+    --primary-ink: 194 65 12;
+    --action: 204 68 0;
+    --action-pressed: 179 59 0;
+    --secondary: 31 41 51;
+    --secondary-soft: 238 240 242;
+    --background: 246 246 244;
+    --card: 255 255 255;
+    --muted: 241 241 238;
+    --border: 231 231 227;
+    --text-heading: 28 37 45;
+    --text-body: 91 104 115;
+    --text-muted: 138 150 160;
+    --success: 16 185 129;
+    --success-soft: 231 248 241;
+    --success-ink: 4 120 87;
+    --warning: 245 158 11;
+    --warning-soft: 254 245 230;
+    --warning-ink: 180 83 9;
+    --danger: 220 38 38;
+    --danger-soft: 253 236 236;
+    --danger-ink: 185 28 28;
+    --info: 59 130 246;
+    --info-soft: 234 242 254;
+    --info-ink: 29 78 216;
+  }
+
+  .dark:root {
+    --primary: 255 85 0;
+    --primary-pressed: 255 112 38;
+    --primary-soft: 42 26 16;
+    --primary-ink: 255 138 76;
+    --action: 204 68 0;
+    --action-pressed: 179 59 0;
+    --secondary: 44 51 60;
+    --secondary-soft: 34 39 46;
+    --background: 14 16 19;
+    --card: 23 26 31;
+    --muted: 31 35 42;
+    --border: 42 47 55;
+    --text-heading: 242 244 246;
+    --text-body: 163 173 184;
+    --text-muted: 124 135 146;
+    --success: 16 185 129;
+    --success-soft: 18 38 31;
+    --success-ink: 52 211 153;
+    --warning: 245 158 11;
+    --warning-soft: 43 35 16;
+    --warning-ink: 251 191 36;
+    --danger: 220 38 38;
+    --danger-soft: 46 23 23;
+    --danger-ink: 248 113 113;
+    --info: 59 130 246;
+    --info-soft: 20 33 58;
+    --info-ink: 96 165 250;
+  }
+}
